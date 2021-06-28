@@ -73,13 +73,6 @@ body {
   margin: 0 auto;
 }
 
-.filters-button {
-  padding: 0;
-  border: 0;
-
-  background-color: transparent;
-}
-
 .hidden-title {
   width: 1px;
   height: 1px;
