@@ -502,7 +502,7 @@ body {
   background-color: var(--primary-white-color);
 }
 
-.clients-subtitle {
+.clients__subtitle {
   margin-bottom: 50px;
 
   font-weight: 700;
@@ -511,15 +511,15 @@ body {
   text-align: center;
 }
 
-.clients-list {
+.clients__list {
   display: flex;
 }
 
-.clients-list .clients-item + .clients-item {
+.clients__list .client + .client {
   margin-left: 30px;
 }
 
-.client-link {
+.client__link {
   display: flex;
   width: 170px;
   height: 92px;
@@ -537,13 +537,13 @@ body {
   transition-timing-function: var(--cubic-bezier);
 }
 
-.client-link:hover,
-.client-link:focus {
+.client__link:hover,
+.client__link:focus {
   border-color: var(--accent-color);
   fill: var(--accent-color);
 }
 
-.client-icon {
+.client__icon {
   display: flex;
   justify-content: center;
   align-items: center;
