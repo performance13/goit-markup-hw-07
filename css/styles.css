@@ -288,8 +288,8 @@ body {
 
 .hero__title,
 .features__subtitle,
+.what-doing__name,
 .join-subtitle,
-.position-title,
 .subscribe-subtitle {
   text-transform: uppercase;
 }
@@ -356,13 +356,13 @@ body {
   color: var(--secondary-text);
 }
 
-.doing {
+.what-doing {
   padding-bottom: var(--section-indent);
 
   background-color: var(--primary-white-color);
 }
 
-.doing-subtitle {
+.what-doing__subtitle {
   margin-bottom: 50px;
 
   font-weight: 700;
@@ -372,19 +372,19 @@ body {
   text-align: center;
 }
 
-.doing-list {
+.what-doing__list {
   display: flex;
 }
 
-.doing-item:not(:last-child) {
+.what-doing__item:not(:last-child) {
   margin-right: 30px;
 }
 
-.doing-item {
+.what-doing__item {
   position: relative;
 }
 
-.position {
+.what-doing__direction {
   display: block;
   width: 370px;
   height: 70px;
@@ -401,7 +401,7 @@ body {
   color: var(--primary-white-color);
 }
 
-.position-title {
+.what-doing__name {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.142;
