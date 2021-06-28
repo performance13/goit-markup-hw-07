@@ -837,7 +837,7 @@ body {
   height: 11px;
 }
 
-.js-subscribe {
+.subscribe-form {
   display: flex;
   position: relative;
 
@@ -855,7 +855,7 @@ body {
   margin-bottom: 20px;
 }
 
-.subscribe-button {
+.subscribe-form__button {
   margin-left: 12px;
   padding: 10px 28px 10px 29px;
 
@@ -877,12 +877,12 @@ body {
   transition-timing-function: var(--cubic-bezier);
 }
 
-.subscribe-button:hover,
-.subscribe-button:focus {
+.subscribe-form__button:hover,
+.subscribe-form__button:focus {
   background-color: var(--click);
 }
 
-.subskribe-icon {
+.subscribe-form__icon {
   width: 24px;
   height: 24px;
 
@@ -892,7 +892,7 @@ body {
   fill: var(--primary-white-color);
 }
 
-.subscribe-input {
+.subscribe-form__input {
   width: 358px;
   height: 50px;
 
@@ -908,7 +908,7 @@ body {
   color: var(--primary-white-color);
 }
 
-.subscribe-input::placeholder {
+.subscribe-form__input::placeholder {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;

@@ -89,7 +89,7 @@
 
       <section class="features">
         <div class="container">
-          <h2 class="hidden-title">Преимущества WebStudio</h2>
+          <h2 class="features__title hidden-title">Преимущества WebStudio</h2>
 
           <ul class="features__list">
             <li class="features__item features__icon features__icon--attention">
@@ -534,25 +534,25 @@
         </div>
 
         <div class="subscribe">
-          <h3 class="hidden-title">подпишитесь на рассылку</h3>
+          <h3 class="subscribe__title hidden-title">подпишитесь на рассылку</h3>
 
-          <form method="GET" class="js-subscribe">
+          <form method="GET" class="subscribe-form">
             <label for="mail" class="subscribe-subtitle"
               ><p>подпишитесь на рассылку</p></label
             >
-            <div class="subscribe-field">
+            <div class="subscribe-form__wrapper">
               <input
-                class="subscribe-input"
+                class="subscribe-form__input"
                 type="email"
                 name="mail"
                 id="mail"
                 placeholder="E-mail"
                 autocomplete="email"
               />
-              <button type="submit" class="button subscribe-button">
+              <button type="submit" class="button subscribe-form__button">
                 Подписаться
 
-                <svg class="subskribe-icon">
+                <svg class="subscribe-form__icon">
                   <use href="./images/icons.svg#subskribe-icon"></use>
                 </svg>
               </button>
@@ -667,7 +667,7 @@
     <script>
       (() => {
         document
-          .querySelector('.js-subscribe')
+          .querySelector('.subscribe-form')
           .addEventListener('submit', e => {
             e.preventDefault();
 
