@@ -511,7 +511,7 @@
                 placeholder="E-mail"
                 autocomplete="email"
               />
-              <button type="submit" class="subscribe-button">
+              <button type="submit" class="button subscribe-button">
                 Подписаться
 
                 <svg class="subskribe-icon">
@@ -526,7 +526,7 @@
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button class="modal-close" data-modal-close>
+        <button class="button modal-close" data-modal-close>
           <svg class="close-icon">
             <use href="./images/icons.svg#close"></use>
           </svg>
@@ -538,7 +538,7 @@
             <p>Имя</p>
             <span class="input-wrap">
               <input
-                class="data-form-input"
+                class="input data-form__input"
                 name="person-form"
                 type="text"
                 minlength="2"
@@ -555,7 +555,7 @@
             <p>Телефон</p>
             <span class="input-wrap">
               <input
-                class="data-form-input"
+                class="input data-form__input"
                 name="phone-form"
                 title="xxx xxx xx xx"
                 type="tel"
@@ -575,7 +575,7 @@
             <p>Почта</p>
             <span class="input-wrap">
               <input
-                class="data-form-input"
+                class="input data-form__input"
                 name="email-form"
                 type="email"
                 required
@@ -592,7 +592,7 @@
             <p>Комментарий</p>
             <textarea
               name="comment-form"
-              class="data-form-input comment"
+              class="input data-form__input comment"
               placeholder="Введите текст"
             ></textarea>
           </label>
@@ -617,7 +617,9 @@
             <a href="#" class="agreement-conditions">Условия договора</a>
           </label>
 
-          <button type="submit" class="data-form-button">Отправить</button>
+          <button type="submit" class="button data-form-button">
+            Отправить
+          </button>
         </form>
       </div>
     </div>
