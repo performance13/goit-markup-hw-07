@@ -96,7 +96,7 @@ body {
   height: auto;
 }
 
-.hero-button,
+.button,
 .portfolio-button,
 .project-item,
 .modal-close,
@@ -158,12 +158,12 @@ body {
   margin-left: 50px;
 }
 
-.top-contacts-list .top-contacts-item + .top-contacts-item {
+.top-contacts__list .top-contacts__item + .top-contacts__item {
   margin-left: 50px;
 }
 
 .site-nav__list,
-.top-contacts-list {
+.top-contacts__list {
   display: flex;
 
   font-weight: 500;
@@ -176,25 +176,7 @@ body {
   margin-left: auto;
 }
 
-.envelope-icon {
-  fill: currentColor;
-  display: block;
-
-  width: 16px;
-  height: 12px;
-  margin-right: 10px;
-}
-
-.smartphone-icon {
-  fill: currentColor;
-  display: block;
-
-  width: 10px;
-  height: 16px;
-  margin-right: 10px;
-}
-
-.top-contacts-link {
+.top-contacts__link {
   display: flex;
   align-items: center;
 
@@ -202,6 +184,13 @@ body {
   padding-bottom: 32px;
 
   color: var(--secondary-text-color);
+}
+
+.top-contacts__icon {
+  fill: currentColor;
+  display: block;
+
+  margin-right: 10px;
 }
 
 .site-nav__item {
@@ -212,8 +201,8 @@ body {
 
 .site-nav__list .site-nav__item :hover,
 .site-nav__list .site-nav__item :focus,
-.top-contacts-list .top-contacts-item :hover,
-.top-contacts-list .top-contacts-item :focus {
+.top-contacts__list .top-contacts__item :hover,
+.top-contacts__list .top-contacts__item :focus {
   color: var(--accent-color);
 }
 
@@ -268,7 +257,7 @@ body {
   background-attachment: scroll;
 }
 
-.hero-title {
+.hero__title {
   width: 696px;
   margin-left: auto;
   margin-right: auto;
@@ -281,7 +270,7 @@ body {
   text-align: center;
 }
 
-.hero-button {
+.hero__button {
   display: block;
 
   margin: auto;
@@ -303,12 +292,12 @@ body {
   transition-timing-function: var(--cubic-bezier);
 }
 
-.hero-button:hover,
-.hero-button:focus {
+.hero__button:hover,
+.hero__button:focus {
   background-color: var(--click);
 }
 
-.hero-title,
+.hero__title,
 .features-subtitle,
 .join-subtitle,
 .position-title,
@@ -597,9 +586,9 @@ body {
   color: var(--primary-white-color);
 }
 
-.coordinates .accent {
+/* .coordinates .accent {
   color: var(--accent-color);
-}
+} */
 
 .address-list {
   font-size: 14px;
