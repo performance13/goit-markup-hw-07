@@ -537,7 +537,7 @@
           <h3 class="subscribe__title hidden-title">подпишитесь на рассылку</h3>
 
           <form method="GET" class="subscribe-form">
-            <label for="mail" class="subscribe-subtitle"
+            <label for="mail" class="subscribe-form__subtitle"
               ><p>подпишитесь на рассылку</p></label
             >
             <div class="subscribe-form__wrapper">
@@ -564,34 +564,39 @@
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button class="button modal-close" data-modal-close>
-          <svg class="close-icon">
+        <button
+          class="button button-close modal__button-close"
+          data-modal-close
+        >
+          <svg class="button-close__icon">
             <use href="./images/icons.svg#close"></use>
           </svg>
         </button>
 
         <form method="GET" class="data-form">
-          <p class="form-subtitle">Оставьте свои данные, мы вам перезвоним</p>
-          <label class="inscription">
+          <p class="data-form__subtitle">
+            Оставьте свои данные, мы вам перезвоним
+          </p>
+          <label class="data-form__description">
             <p>Имя</p>
-            <span class="input-wrap">
+            <span class="input-wrapper">
               <input
                 class="input data-form__input"
                 name="person-form"
                 type="text"
                 minlength="2"
                 required
-              /><span class="input-icon">
-                <svg class="person-form-icon">
+              /><span class="data-form__icon">
+                <svg class="data-form__icon--svg">
                   <use href="./images/icons.svg#person-form"></use>
                 </svg>
               </span>
             </span>
           </label>
 
-          <label class="inscription">
+          <label class="data-form__description">
             <p>Телефон</p>
-            <span class="input-wrap">
+            <span class="input-wrapper">
               <input
                 class="input data-form__input"
                 name="phone-form"
@@ -601,61 +606,63 @@
                 minlength="10"
                 required
               />
-              <span class="input-icon">
-                <svg class="person-form-icon">
+              <span class="data-form__icon">
+                <svg class="data-form__icon--svg">
                   <use href="./images/icons.svg#phone-form"></use>
                 </svg>
               </span>
             </span>
           </label>
 
-          <label class="inscription">
+          <label class="data-form__description">
             <p>Почта</p>
-            <span class="input-wrap">
+            <span class="input-wrapper">
               <input
                 class="input data-form__input"
                 name="email-form"
                 type="email"
                 required
               />
-              <span class="input-icon">
-                <svg class="person-form-icon">
+              <span class="data-form__icon">
+                <svg class="data-form__icon--svg">
                   <use href="./images/icons.svg#email-form"></use>
                 </svg>
               </span>
             </span>
           </label>
 
-          <label class="inscription inscription-textarea">
+          <label
+            class="data-form__description data-form__description--textarea"
+          >
             <p>Комментарий</p>
             <textarea
               name="comment-form"
-              class="input data-form__input comment"
+              class="input input__comment data-form__input"
               placeholder="Введите текст"
             ></textarea>
           </label>
 
-          <label for="check-box" class="agree-newsletter">
+          <label for="check-box" class="data-form__agree-newsletter">
             <input
               type="checkbox"
               id="check-box"
               value="agree"
               name="check"
-              class="checkbox"
+              class="data-form__checkbox"
               required
             />
-            <span class="checkbox-icon">
-              <svg class="check-mark">
+            <span class="checkbox__icon">
+              <svg class="checkbox__icon--check-mark">
                 <use href="./images/icons.svg#check-mark"></use>
               </svg>
             </span>
-            <p class="agree-newsletter-text">
+            <p class="agree-newsletter__text">
               Соглашаюсь с рассылкой и принимаю
             </p>
-            <a href="#" class="agreement-conditions">Условия договора</a>
+            <a href="#" class="agreement__link">Условия договора</a>
           </label>
 
-          <button type="submit" class="button data-form-button">
+          <button type="submit" class="button data-form__button">
             Отправить
           </button>
         </form>

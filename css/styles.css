@@ -92,7 +92,7 @@ body {
 .button,
 .input,
 .project__item,
-.agree-newsletter {
+.data-form__agree-newsletter {
   cursor: pointer;
 }
 
@@ -286,7 +286,7 @@ body {
 .features__subtitle,
 .what-doing__title,
 .join__subtitle,
-.subscribe-subtitle {
+.subscribe-form__subtitle {
   text-transform: uppercase;
 }
 
@@ -816,7 +816,7 @@ body {
   box-shadow: var(--box-shadow1), var(--box-shadow2), var(--box-shadow3);
 }
 
-.modal-close {
+.modal__button-close {
   display: block;
   position: absolute;
   top: 8px;
@@ -832,7 +832,7 @@ body {
   border-radius: 50%;
 }
 
-.close-icon {
+.button-close__icon {
   width: 11px;
   height: 11px;
 }
@@ -845,7 +845,7 @@ body {
   margin-left: 93px;
 }
 
-.subscribe-subtitle {
+.subscribe-form__subtitle {
   display: block;
   font-weight: 700;
   font-size: 14px;
@@ -922,7 +922,7 @@ body {
   padding: 40px;
 }
 
-.form-subtitle {
+.data-form__subtitle {
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
@@ -934,7 +934,7 @@ body {
   color: var(--primary-text);
 }
 
-.data-form-button {
+.data-form__button {
   display: block;
 
   min-width: 200px;
@@ -960,8 +960,8 @@ body {
   transition-timing-function: var(--cubic-bezier);
 }
 
-.data-form-button:hover,
-.data-form-button:focus {
+.data-form__button:hover,
+.data-form__button:focus {
   background-color: var(--click);
   border-radius: 4px;
 }
@@ -988,11 +988,11 @@ body {
   border-color: var(--accent-color);
 }
 
-.data-form__input:focus + .input-icon {
+.data-form__input:focus + .data-form__icon {
   fill: var(--accent-color);
 }
 
-.comment {
+.input__comment {
   width: 100%;
   height: 120px;
 
@@ -1003,7 +1003,7 @@ body {
   resize: none;
 }
 
-.comment::placeholder {
+.input__comment::placeholder {
   font-weight: 400;
   font-size: 12px;
   line-height: 1.166;
@@ -1012,7 +1012,7 @@ body {
   color: var(--comment-placeholder);
 }
 
-.agree-newsletter {
+.data-form__agree-newsletter {
   display: block;
 
   margin-bottom: 30px;
@@ -1027,11 +1027,11 @@ body {
   color: var(--secondary-text);
 }
 
-.agree-newsletter-text {
+.agree-newsletter__text {
   display: inline;
 }
 
-.agreement-conditions {
+.agreement__link {
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -1041,7 +1041,7 @@ body {
   color: var(--accent-color);
 }
 
-.inscription {
+.data-form__description {
   display: block;
 
   margin-bottom: 10px;
@@ -1051,17 +1051,17 @@ body {
 
   color: var(--secondary-text);
 }
-.inscription-textarea {
-  margin-bottom: 32px;
+.data-form__description--textarea {
+  margin-bottom: 20px;
 }
 
-.input-wrap {
+.input-wrapper {
   display: block;
   position: relative;
   margin-top: 4px;
 }
 
-.person-form-icon {
+.data-form__icon--svg {
   position: absolute;
   transform: translateY(-50%);
   top: 50%;
@@ -1071,12 +1071,12 @@ body {
   height: 18px;
 }
 
-.checkbox {
+.data-form__checkbox {
   appearance: none;
   position: absolute;
 }
 
-.checkbox-icon {
+.checkbox__icon {
   display: inline-block;
 
   border: 2px solid var(--primary-text);
@@ -1085,13 +1085,13 @@ body {
   vertical-align: sub;
 }
 
-.check-mark {
+.checkbox__icon--check-mark {
   display: block;
   width: 16px;
   height: 15px;
 }
 
-.checkbox:checked + .checkbox-icon {
+.data-form__checkbox:checked + .checkbox__icon {
   background-size: contain;
 
   margin-left: auto;
