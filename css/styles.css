@@ -414,7 +414,7 @@ body {
   background-color: var(--bgc-section);
 }
 
-.team-subtitle {
+.team__subtitle {
   margin-bottom: 50px;
 
   font-weight: 700;
@@ -424,22 +424,22 @@ body {
   text-align: center;
 }
 
-.team-list {
+.team__list {
   display: flex;
 }
 
-.team-item {
+.member-card {
   background-color: var(--primary-white-color);
   box-shadow: var(--box-shadow1), var(--box-shadow2), var(--box-shadow3);
 }
 
-.team-field {
+.member-card__meta {
   padding: 30px 32px 8px 32px;
 
   text-align: center;
 }
 
-.team-field-subtitle {
+.member-card__name {
   margin-bottom: 10px;
 
   font-weight: 500;
@@ -447,7 +447,7 @@ body {
   line-height: 1.187;
 }
 
-.team-field-text {
+.member-card__profession {
   font-size: 16px;
   line-height: 1.187;
 
@@ -456,21 +456,21 @@ body {
   text-align: center;
 }
 
-.team-list .team-item + .team-item {
+.team__list .member-card + .member-card {
   margin-left: 30px;
 }
 
-.social-links-list {
+.social-links__list {
   display: flex;
 
   padding: 8px 32px 30px 32px;
 }
 
-.social-links-list .social-link-item + .social-link-item {
+.social-links__list .social-links__item + .social-links__item {
   margin-left: 10px;
 }
 
-.social-link {
+.social-links__link {
   display: flex;
   width: 44px;
   height: 44px;
@@ -485,13 +485,13 @@ body {
   transition-timing-function: var(--cubic-bezier);
 }
 
-.social-link:hover,
-.social-link:focus {
+.social-links__link:hover,
+.social-links__link:focus {
   background-color: var(--accent-color);
   fill: var(--primary-white-color);
 }
 
-.social-icon {
+.social-links__icon {
   width: 20px;
   height: 20px;
 }
