@@ -1,6 +1,6 @@
 :root {
   --primary-text: #212121;
-  --secondary-text-color: #757575;
+  --secondary-text: #757575;
   --primary-white-color: #ffffff;
   --accent-color: #2196f3;
   --second-color-logo-header: #000000;
@@ -172,7 +172,7 @@ body {
   padding-top: 32px;
   padding-bottom: 32px;
 
-  color: var(--secondary-text-color);
+  color: var(--secondary-text);
 }
 
 .top-contacts__icon {
@@ -287,7 +287,7 @@ body {
 }
 
 .hero__title,
-.features-subtitle,
+.features__subtitle,
 .join-subtitle,
 .position-title,
 .subscribe-subtitle {
@@ -301,15 +301,19 @@ body {
   background-color: var(--primary-white-color);
 }
 
-.features-list {
+.features__list {
   display: flex;
 }
 
-.features-item {
+.features__item {
   width: 270px;
 }
 
-.features-item::before {
+.features__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.features__icon::before {
   content: '';
   display: block;
 
@@ -321,27 +325,23 @@ body {
   background-position: center;
 }
 
-.icon-attention::before {
+.features__icon--attention::before {
   background-image: url(../images/group1.svg);
 }
 
-.icon-attention::before {
-  background-image: url(../images/group1.svg);
-}
-
-.icon-punctuality::before {
+.features__icon--punctuality::before {
   background-image: url(../images/group2.svg);
 }
 
-.icon-planning::before {
+.features__icon--planning::before {
   background-image: url(../images/group3.svg);
 }
 
-.icon-technologies::before {
+.features__icon--technologies::before {
   background-image: url(../images/group4.svg);
 }
 
-.features-subtitle {
+.features__subtitle {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.142;
@@ -349,15 +349,11 @@ body {
   margin-bottom: 10px;
 }
 
-.features-text {
+.features__text {
   font-size: 14px;
   line-height: 1.714;
 
-  color: var(--secondary-text-color);
-}
-
-.features-item:not(:last-child) {
-  margin-right: 30px;
+  color: var(--secondary-text);
 }
 
 .doing {
@@ -455,7 +451,7 @@ body {
   font-size: 16px;
   line-height: 1.187;
 
-  color: var(--secondary-text-color);
+  color: var(--secondary-text);
 
   text-align: center;
 }
@@ -806,7 +802,7 @@ body {
   font-size: 16px;
   line-height: 1.875;
 
-  color: var(--secondary-text-color);
+  color: var(--secondary-text);
 }
 
 /*? backdrop */
@@ -1051,7 +1047,7 @@ body {
 
   text-align: center;
 
-  color: var(--secondary-text-color);
+  color: var(--secondary-text);
 }
 
 .agree-newsletter-text {
@@ -1076,7 +1072,7 @@ body {
   line-height: 1.166;
   letter-spacing: 0.01em;
 
-  color: var(--secondary-text-color);
+  color: var(--secondary-text);
 }
 .inscription-textarea {
   margin-bottom: 32px;
