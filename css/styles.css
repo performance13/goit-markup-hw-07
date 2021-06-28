@@ -96,10 +96,6 @@ body {
   cursor: pointer;
 }
 
-.address-list {
-  font-style: normal;
-}
-
 /*? header */
 .hat {
   background-color: var(--primary-white-color);
@@ -121,7 +117,7 @@ body {
   color: var(--second-color-logo-header);
 }
 
-.accent {
+.logo--accent {
   color: var(--accent-color);
 }
 
@@ -552,18 +548,18 @@ body {
 }
 
 /*? footer */
-.coordinates {
+.page-footer {
   padding: 60px 0;
 
   background-color: var(--background-color-hero-footer);
 }
 
-.coordinates .container {
+.page-footer .container {
   display: flex;
   align-items: baseline;
 }
 
-.coordinates .logo {
+.page-footer .logo {
   display: block;
 
   margin-bottom: 20px;
@@ -571,11 +567,12 @@ body {
   color: var(--primary-white-color);
 }
 
-/* .coordinates .accent {
+/* .page-footer .logo--accent {
   color: var(--accent-color);
 } */
 
-.address-list {
+.address__list {
+  font-style: normal;
   font-size: 14px;
   line-height: 1.714;
 
@@ -584,24 +581,24 @@ body {
   transition-timing-function: var(--cubic-bezier);
 }
 
-.address-list :hover,
-.address-list :focus {
+.address__list :hover,
+.address__list :focus {
   color: var(--accent-color);
 }
 
-.coordinates .place {
+.address__item--place {
   margin-bottom: 9px;
 
   color: var(--primary-white-color);
 }
 
-.coordinates .mail {
+.address__item--mail {
   margin-bottom: 9px;
 
   color: var(--address-link-mail-phone-color);
 }
 
-.coordinates .phone {
+.address__item--phone {
   color: var(--address-link-mail-phone-color);
 }
 
