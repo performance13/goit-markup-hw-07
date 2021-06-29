@@ -679,19 +679,6 @@
 
     <script src="./js/modal.js"></script>
 
-    <script>
-      (() => {
-        document
-          .querySelector('.subscribe-form')
-          .addEventListener('submit', e => {
-            e.preventDefault();
-
-            new FormData(e.currentTarget).forEach((value, name) =>
-              console.log('${name}: ${value}'),
-            );
-            e.currentTarget.reset();
-          });
-      })();
-    </script>
+    <script src="./js/submit.js"></script>
   </body>
 </html>
