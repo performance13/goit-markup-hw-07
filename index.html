@@ -26,8 +26,8 @@
   </head>
 
   <body>
-    <header class="page-header">
-      <div class="container">
+    <header class="page-header page-header__border">
+      <div class="container page-header__container">
         <a
           href="index.html"
           class="logo page-header__logo"
@@ -53,20 +53,20 @@
           </ul>
         </nav>
 
-        <div class="top-contacts">
-          <ul class="top-contacts__list">
-            <li class="top-contacts__item">
-              <a href="mailto:info@devstudio.com" class="top-contacts__link">
-                <svg width="16" height="12" class="top-contacts__icon">
+        <div class="site-nav__contacts contacts">
+          <ul class="contacts__list">
+            <li class="contacts__item">
+              <a href="mailto:info@devstudio.com" class="contacts__link">
+                <svg width="16" height="12" class="contacts__icon">
                   <use href="./images/icons.svg#envelope"></use>
                 </svg>
                 info@devstudio.com
               </a>
             </li>
 
-            <li class="top-contacts__item">
-              <a href="tel:+380961111111" class="top-contacts__link">
-                <svg width="10" height="16" class="top-contacts__icon">
+            <li class="contacts__item">
+              <a href="tel:+380961111111" class="contacts__link">
+                <svg width="10" height="16" class="contacts__icon">
                   <use href="./images/icons.svg#smartphone"></use>
                 </svg>
                 +38 096 111 11 11
@@ -78,7 +78,7 @@
     </header>
 
     <main>
-      <section class="hero overlays">
+      <section class="hero overlays hero__overlays">
         <div class="container">
           <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
           <button class="button hero__button" type="button" data-modal-open>
@@ -89,7 +89,9 @@
 
       <section class="features">
         <div class="container">
-          <h2 class="features__title hidden-title">Преимущества WebStudio</h2>
+          <h2 class="title features__title title--hidden">
+            Преимущества WebStudio
+          </h2>
 
           <ul class="features__list">
             <li class="features__item features__icon features__icon--attention">
@@ -454,7 +456,7 @@
     <footer class="page-footer">
       <div class="container">
         <div class="address-wrapper">
-          <a href="index.html" class="logo" lang="en"
+          <a href="index.html" class="logo page-footer__logo" lang="en"
             ><span class="logo--accent">Web</span>Studio
           </a>
 
@@ -481,7 +483,7 @@
           </address>
         </div>
 
-        <div class="join">
+        <div class="join page-footer__join">
           <h3 class="join__subtitle">присоединяйтесь</h3>
 
           <div class="social-links">
@@ -534,9 +536,11 @@
         </div>
 
         <div class="subscribe">
-          <h3 class="subscribe__title hidden-title">подпишитесь на рассылку</h3>
+          <h3 class="subscribe__title title--hidden">
+            подпишитесь на рассылку
+          </h3>
 
-          <form method="GET" class="subscribe-form">
+          <form method="GET" class="form subscribe__form subscribe-form">
             <label for="mail" class="subscribe-form__subtitle"
               ><p>подпишитесь на рассылку</p></label
             >
@@ -562,8 +566,8 @@
       </div>
     </footer>
 
-    <div class="backdrop is-hidden" data-modal>
-      <div class="modal">
+    <div class="backdrop backdrop--position is-hidden" data-modal>
+      <div class="modal backdrop__modal">
         <button
           class="button button-close modal__button-close"
           data-modal-close
@@ -579,7 +583,7 @@
           </p>
           <label class="data-form__description">
             <p>Имя</p>
-            <span class="input-wrapper">
+            <span class="data-form__input-wrapper">
               <input
                 class="input data-form__input"
                 name="person-form"
@@ -587,7 +591,7 @@
                 minlength="2"
                 required
               /><span class="data-form__icon">
-                <svg class="data-form__icon--svg">
+                <svg class="data-form__svg">
                   <use href="./images/icons.svg#person-form"></use>
                 </svg>
               </span>
@@ -596,7 +600,7 @@
 
           <label class="data-form__description">
             <p>Телефон</p>
-            <span class="input-wrapper">
+            <span class="data-form__input-wrapper">
               <input
                 class="input data-form__input"
                 name="phone-form"
@@ -607,7 +611,7 @@
                 required
               />
               <span class="data-form__icon">
-                <svg class="data-form__icon--svg">
+                <svg class="data-form__svg">
                   <use href="./images/icons.svg#phone-form"></use>
                 </svg>
               </span>
@@ -616,7 +620,7 @@
 
           <label class="data-form__description">
             <p>Почта</p>
-            <span class="input-wrapper">
+            <span class="data-form__input-wrapper">
               <input
                 class="input data-form__input"
                 name="email-form"
@@ -624,7 +628,7 @@
                 required
               />
               <span class="data-form__icon">
-                <svg class="data-form__icon--svg">
+                <svg class="data-form__svg">
                   <use href="./images/icons.svg#email-form"></use>
                 </svg>
               </span>

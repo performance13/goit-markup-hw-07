@@ -21,8 +21,8 @@
   </head>
 
   <body>
-    <header class="page-header">
-      <div class="container">
+    <header class="page-header page-header__border">
+      <div class="container page-header__container">
         <a
           href="index.html"
           class="logo page-header__logo"
@@ -48,20 +48,20 @@
           </ul>
         </nav>
 
-        <div class="top-contacts">
-          <ul class="top-contacts__list">
-            <li class="top-contacts__item">
-              <a href="mailto:info@devstudio.com" class="top-contacts__link">
-                <svg width="16" height="12" class="top-contacts__icon">
+        <div class="site-nav__contacts contacts">
+          <ul class="contacts__list">
+            <li class="contacts__item">
+              <a href="mailto:info@devstudio.com" class="contacts__link">
+                <svg width="16" height="12" class="contacts__icon">
                   <use href="./images/icons.svg#envelope"></use>
                 </svg>
                 info@devstudio.com
               </a>
             </li>
 
-            <li class="top-contacts__item">
-              <a href="tel:+380961111111" class="top-contacts__link">
-                <svg width="10" height="16" class="top-contacts__icon">
+            <li class="contacts__item">
+              <a href="tel:+380961111111" class="contacts__link">
+                <svg width="10" height="16" class="contacts__icon">
                   <use href="./images/icons.svg#smartphone"></use>
                 </svg>
                 +38 096 111 11 11
@@ -75,7 +75,9 @@
     <main>
       <section class="portfolio">
         <div class="container">
-          <h2 class="hidden-title">Портфолио-примеры работ WebStudio</h2>
+          <h2 class="title portfolio__title title--hidden">
+            Портфолио-примеры работ WebStudio
+          </h2>
           <ul class="portfolio__list">
             <li class="portfolio__item">
               <button
@@ -373,7 +375,7 @@
     <footer class="page-footer">
       <div class="container">
         <div class="address-wrapper">
-          <a href="index.html" class="logo" lang="en"
+          <a href="index.html" class="logo page-footer__logo" lang="en"
             ><span class="logo--accent">Web</span>Studio
           </a>
 
@@ -400,7 +402,7 @@
           </address>
         </div>
 
-        <div class="join">
+        <div class="join page-footer__join">
           <h3 class="join__subtitle">присоединяйтесь</h3>
 
           <div class="social-links">
@@ -453,9 +455,11 @@
         </div>
 
         <div class="subscribe">
-          <h3 class="subscribe__title hidden-title">подпишитесь на рассылку</h3>
+          <h3 class="subscribe__title title--hidden">
+            подпишитесь на рассылку
+          </h3>
 
-          <form method="GET" class="subscribe-form">
+          <form method="GET" class="form subscribe__form subscribe-form">
             <label for="mail" class="subscribe-form__subtitle"
               ><p>подпишитесь на рассылку</p></label
             >
