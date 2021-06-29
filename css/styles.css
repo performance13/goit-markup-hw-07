@@ -193,13 +193,13 @@ body {
   color: var(--accent-color);
 }
 
-.active-page {
+.site-nav__link--active-page {
   color: var(--accent-color);
 
   position: relative;
 }
 
-.active-page::after {
+.site-nav__link--active-page::after {
   display: block;
   content: '';
   text-align: center;
