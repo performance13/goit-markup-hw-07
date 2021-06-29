@@ -1,4 +1,3 @@
-
 {
     "liveSassCompile.settings.formats": [
         {
@@ -21,27 +20,4 @@
         "> 1%",
         "last 2 versions"
     ]
-    
-    //    {
-    //    "liveSassCompile.settings.formats": [
-    //         // This is Default.
-    //         {
-    //             "format": "expanded",
-    //             "extensionName": ".css",
-    //             "savePath": null
-    //         },
-    //         // You can add more
-    //         {
-    //             "format": "compressed",
-    //             "extensionName": ".min.css",
-    //             "savePath": "/dist/css"
-    //         },
-    //         // More Complex
-    //         {
-    //             "format": "compressed",
-    //             "extensionName": ".min.css",
-    //             "savePath": "~/../css/"
-    //         }
-    //     ]
-    // }
 }
