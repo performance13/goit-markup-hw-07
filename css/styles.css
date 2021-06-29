@@ -556,7 +556,7 @@ body {
   background-color: var(--bgc-hero-footer);
 }
 
-.page-footer .container {
+.page-footer__container {
   display: flex;
   align-items: baseline;
 }
@@ -584,19 +584,15 @@ body {
   color: var(--accent-color);
 }
 
-.address__item--place {
+.address__item:not(:last-child) {
   margin-bottom: 9px;
+}
 
+.address__item--place {
   color: var(--primary-white);
 }
 
-.address__item--mail {
-  margin-bottom: 9px;
-
-  color: var(--address-subscribe-color);
-}
-
-.address__item--phone {
+.address__item--connection {
   color: var(--address-subscribe-color);
 }
 
