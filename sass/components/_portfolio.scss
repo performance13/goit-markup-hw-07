@@ -1,0 +1,30 @@
+.portfolio {
+  padding-top: var(--section-indent);
+  padding-bottom: var(--section-indent);
+
+  background-color: var(--primary-white);
+}
+
+.portfolio__list {
+  display: flex;
+
+  margin-bottom: 50px;
+
+  justify-content: center;
+
+  transition-property: background-color, color, border-radius;
+  transition-duration: 250ms;
+  transition-timing-function: var(--function);
+}
+
+.portfolio__list :hover,
+.portfolio__list :focus {
+  background-color: var(--accent-color);
+  color: var(--primary-white);
+
+  border-radius: 4px;
+}
+
+.portfolio__item:not(:last-child) {
+  margin-right: 8px;
+}

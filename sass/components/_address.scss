@@ -1,0 +1,26 @@
+.address__list {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.714;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: var(--function);
+}
+
+.address__list :hover,
+.address__list :focus {
+  color: var(--accent-color);
+}
+
+.address__item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.address__item--place {
+  color: var(--primary-white);
+}
+
+.address__item--connection {
+  color: var(--address-subscribe-color);
+}

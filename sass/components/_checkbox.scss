@@ -1,0 +1,58 @@
+.data-form__agree-newsletter {
+  display: block;
+
+  margin-bottom: 30px;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.714;
+
+  text-align: center;
+
+  color: var(--secondary-text);
+}
+
+.agree-newsletter__text {
+  display: inline;
+}
+
+.agreement__link {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.714;
+
+  text-decoration: underline;
+  color: var(--accent-color);
+}
+
+.data-form__checkbox {
+  appearance: none;
+  position: absolute;
+}
+
+.checkbox__icon {
+  display: inline-block;
+
+  border: 2px solid var(--primary-text);
+  border-radius: 2px;
+
+  vertical-align: sub;
+}
+
+.checkbox__icon--check-mark {
+  display: block;
+  width: 16px;
+  height: 15px;
+}
+
+.data-form__checkbox:checked + .checkbox__icon {
+  background-size: contain;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+}

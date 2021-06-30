@@ -1,0 +1,119 @@
+.hero__button {
+  display: block;
+
+  margin: auto;
+  min-width: 200px;
+  height: 50px;
+
+  font-weight: 700;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+
+  background-color: var(--accent-color);
+  color: var(--primary-white);
+
+  border: 1px solid transparent;
+  border-radius: 4px;
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: var(--function);
+}
+
+.hero__button:hover,
+.hero__button:focus {
+  background-color: var(--active-accent);
+}
+
+.portfolio__button {
+  padding: 6px 22px;
+
+  font-weight: 500;
+  line-height: 1.625;
+
+  background-color: var(--bgc-team-portfolio-btn);
+  color: var(--primary-text);
+
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+.button--selected {
+  background-color: var(--accent-color);
+  color: var(--primary-white);
+}
+
+.modal__button-close {
+  display: block;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+
+  width: 30px;
+  height: 30px;
+
+  fill: var(--black-color);
+  background-color: var(--primary-white);
+
+  border: 1px solid var(--color-circle-icon-close);
+  border-radius: 50%;
+}
+
+.subscribe-form__button {
+  margin-left: 12px;
+  padding: 10px 28px 10px 29px;
+
+  min-width: 200px;
+  height: 50px;
+
+  font-weight: 700;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+
+  background-color: var(--accent-color);
+  color: var(--primary-white);
+
+  border: 1px solid transparent;
+  border-radius: 4px;
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: var(--function);
+}
+
+.subscribe-form__button:hover,
+.subscribe-form__button:focus {
+  background-color: var(--active-accent);
+}
+
+.data-form__button {
+  display: block;
+
+  min-width: 200px;
+  height: 50px;
+
+  padding: 10px 55px 10px 56px;
+  margin: auto;
+
+  font-weight: 700;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+
+  background-color: var(--accent-color);
+  color: var(--primary-white);
+
+  box-shadow: var(--box-shadow1), var(--box-shadow2), var(--box-shadow3);
+
+  border: 1px solid transparent;
+  border-radius: 4px;
+
+  transition-property: background-color, border-radius;
+  transition-duration: 250ms;
+  transition-timing-function: var(--function);
+}
+
+.data-form__button:hover,
+.data-form__button:focus {
+  background-color: var(--active-accent);
+  border-radius: 4px;
+}

@@ -1,36 +1,45 @@
-@import './utils/variables';
+@import "./utils/variables";
+@import "./utils/_reset-styles";
 
-@import './utils/placeholders';
-@import './utils/mixins';
+@import "./components/common-properties";
+@import "./components/container";
 
-@import './utils/is-hidden';
-@import './utils/title-hidden';
+@import "./utils/visually-hidden";
+@import "./components/picture";
 
-@import './components/page-header';
-@import './components/logo';
-@import './components/site-nav';
-@import './components/contacts';
+@import "./components/cursor-pointer";
 
-@import './components/hero';
+@import "./components/page-header";
 
-@import './components/button';
+@import "./components/logo";
 
-@import './components/features';
-@import './components/what-doing';
-@import './components/team';
-@import './components/clients';
+@import "./components/site-nav";
+@import "./components/contacts";
 
-@import './components/page-footer';
-@import './components/address';
-@import './components/join';
-@import './components/subscribe';
+@import "./components/hero";
 
-@import './components/portfolio';
+@import "./components/button";
+@import "./utils/uppercase";
 
-@import './components/backdrop';
+@import "./components/features";
+@import "./components/what-doing";
+@import "./components/team";
 
-@import './utils/modal';
+@import "./components/social-links";
 
-@import './components/data-form';
+@import "./components/clients";
+@import "./components/page-footer";
+@import "./components/address";
+@import "./components/join";
+@import "./components/portfolio";
 
-@import './components/checkbox';
+@import "./components/project";
+
+@import "./components/backdrop";
+@import "./components/modal";
+@import "./components/subscribe";
+@import "./components/data-form";
+@import "./components/checkbox";
+
+@import "./utils/placeholders";
+@import "./utils/mixins";
