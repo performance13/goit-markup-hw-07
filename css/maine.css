@@ -607,25 +607,28 @@ body {
   font-style: normal;
   font-size: 14px;
   line-height: 1.714;
+}
+
+.address__item {
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: var(--function);
-}
-
-.address__list:hover, .address__list:focus {
-  color: var(--accent-color);
 }
 
 .address__item:not(:last-child) {
   margin-bottom: 9px;
 }
 
-.address__item--place {
+.address__link--place {
   color: var(--primary-white);
 }
 
-.address__item--connection {
+.address__link--connection {
   color: var(--address-subscribe-color);
+}
+
+.address__link:hover, .address__link:focus {
+  color: var(--accent-color);
 }
 
 .page-footer__join {
