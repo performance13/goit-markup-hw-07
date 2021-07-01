@@ -1,61 +1,59 @@
 .features {
   padding-top: 90px;
   padding-bottom: var(--section-indent);
-
   background-color: var(--primary-white);
+  &__list {
+    display: flex;
+  }
+  &__item {
+    width: 270px;
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+  &__subtitle {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.142;
+    margin-bottom: 10px;
+  }
+  &__text {
+    font-size: 14px;
+    line-height: 1.714;
+    color: var(--secondary-text);
+  }
 }
 
-.features__list {
-  display: flex;
-}
-
-.features__item {
-  width: 270px;
-}
-
-.features__item:not(:last-child) {
-  margin-right: 30px;
-}
-
-.features__icon::before {
-  content: "";
-  display: block;
-
-  height: 120px;
-
-  margin-bottom: 30px;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.features__icon--attention::before {
-  background-image: url(../images/group1.svg);
-}
-
-.features__icon--punctuality::before {
-  background-image: url(../images/group2.svg);
-}
-
-.features__icon--planning::before {
-  background-image: url(../images/group3.svg);
-}
-
-.features__icon--technologies::before {
-  background-image: url(../images/group4.svg);
-}
-
-.features__subtitle {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.142;
-
-  margin-bottom: 10px;
-}
-
-.features__text {
-  font-size: 14px;
-  line-height: 1.714;
-
-  color: var(--secondary-text);
+.features {
+  &__icon {
+    &::before {
+      content: "";
+      display: block;
+      height: 120px;
+      margin-bottom: 30px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    &--attention {
+      &::before {
+        background-image: url(../images/group1.svg);
+      }
+    }
+    &--punctuality {
+      &::before {
+        background-image: url(../images/group2.svg);
+      }
+    }
+    &--planning {
+      &::before {
+        background-image: url(../images/group3.svg);
+      }
+    }
+    &--technologies {
+      &::before {
+        background-image: url(../images/group4.svg);
+      }
+    }
+  }
 }
