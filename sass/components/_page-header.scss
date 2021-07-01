@@ -1,13 +1,10 @@
 .page-header {
   background-color: var(--primary-white);
-}
-
-.page-header__border {
-  border-bottom: 1px solid var(--line-header);
-}
-
-.page-header__container {
-  display: flex;
-
-  align-items: center;
+  &__container {
+    display: flex;
+    align-items: center;
+  }
+  &__border {
+    border-bottom: 1px solid var(--line-header);
+  }
 }
