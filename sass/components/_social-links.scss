@@ -1,50 +1,64 @@
-.social-links__list {
-  display: flex;
-
-  padding: 8px 32px 30px 32px;
+.social-links {
+  &__list {
+    display: flex;
+    padding: 8px 32px 30px 32px;
+  }
 }
 
-.social-links__list .social-links__item + .social-links__item {
-  margin-left: 10px;
+.social-links {
+  &__list {
+    .social-links {
+      &__item + .social-links {
+        &__item {
+          margin-left: 10px;
+        }
+      }
+    }
+  }
 }
 
-.social-links__link {
-  display: flex;
-  width: 44px;
-  height: 44px;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-
-  fill: var(--color-icon);
-
-  transition-property: background-color, fill;
-  transition-duration: 250ms;
-  transition-timing-function: var(--function);
+.social-links {
+  &__link {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    fill: var(--color-icon);
+    transition-property: background-color, fill;
+    transition-duration: 250ms;
+    transition-timing-function: var(--function);
+    &:hover,
+    &:focus {
+      background-color: var(--accent-color);
+      fill: var(--primary-white);
+    }
+  }
+  &__icon {
+    width: 20px;
+    height: 20px;
+  }
 }
 
-.social-links__link:hover,
-.social-links__link:focus {
-  background-color: var(--accent-color);
-  fill: var(--primary-white);
+.social-links {
+  &__list {
+    &--footer {
+      padding: 0;
+    }
+  }
 }
 
-.social-links__icon {
-  width: 20px;
-  height: 20px;
-}
-
-.social-links__list--footer {
-  padding: 0;
-}
-
-.social-links__link--footer {
-  fill: var(--primary-white);
-  background-color: var(--color-circle-icon-bottom);
-}
-
-.social-links__link--footer:hover,
-.social-links__link--footer:focus {
-  background-color: var(--accent-color);
-  fill: var(--primary-white);
+.social-links {
+  &__link {
+    &--footer {
+      fill: var(--primary-white);
+      background-color: var(--color-circle-icon-bottom);
+      &:hover,
+      &:focus {
+        background-color: var(--accent-color);
+        fill: var(--primary-white);
+      }
+    }
+  }
 }
