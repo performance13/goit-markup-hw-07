@@ -3,23 +3,23 @@
   font-weight: 700;
   font-size: 26px;
   line-height: 1.173;
-
   color: var(--black-color);
+  &--accent {
+    color: var(--accent-color);
+  }
 }
 
-.logo--accent {
-  color: var(--accent-color);
+.page-header {
+  &__logo {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
 }
 
-.page-header__logo {
-  padding-top: 24px;
-  padding-bottom: 24px;
-}
-
-.page-footer__logo {
-  display: block;
-
-  margin-bottom: 20px;
-
-  color: var(--primary-white);
+.page-footer {
+  &__logo {
+    display: block;
+    margin-bottom: 20px;
+    color: var(--primary-white);
+  }
 }
