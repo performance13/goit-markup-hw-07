@@ -1,14 +1,14 @@
-.title--hidden {
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-
-  visibility: hidden;
-  position: absolute;
+.title {
+  &--hidden {
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    visibility: hidden;
+    position: absolute;
+  }
 }
 
 .backdrop.is-hidden {
   opacity: 0;
-
   pointer-events: none;
 }
