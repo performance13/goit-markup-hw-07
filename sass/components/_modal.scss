@@ -1,8 +1,8 @@
 .modal {
   min-width: 528px;
   min-height: 581px;
-  background-color: var(--primary-white);
-  box-shadow: var(--box-shadow1), var(--box-shadow2), var(--box-shadow3);
+  background-color: $primary-white;
+  box-shadow: $box-shadow1, $box-shadow2, $box-shadow3;
 }
 
 .backdrop {

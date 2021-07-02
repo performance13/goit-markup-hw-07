@@ -25,14 +25,14 @@
     // justify-content: center;
     // align-items: center;
     border-radius: 50%;
-    fill: var(--color-icon);
+    fill: $color-icon;
     transition-property: background-color, fill;
     transition-duration: 250ms;
-    transition-timing-function: var(--function);
+    transition-timing-function: $function;
     &:hover,
     &:focus {
-      background-color: var(--accent-color);
-      fill: var(--primary-white);
+      background-color: $accent-color;
+      fill: $primary-white;
     }
   }
   &__icon {
@@ -52,12 +52,12 @@
 .social-links {
   &__link {
     &--footer {
-      fill: var(--primary-white);
-      background-color: var(--color-circle-icon-bottom);
+      fill: $primary-white;
+      background-color: $color-circle-icon-bottom;
       &:hover,
       &:focus {
-        background-color: var(--accent-color);
-        fill: var(--primary-white);
+        background-color: $accent-color;
+        fill: $primary-white;
       }
     }
   }

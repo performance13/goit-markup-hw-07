@@ -13,30 +13,30 @@
     font-weight: 700;
     font-size: 14px;
     line-height: 1.142;
-    color: var(--primary-white);
+    color: $primary-white;
     margin-bottom: 20px;
   }
   &__input {
     width: 358px;
     height: 50px;
     padding: 15px 16px;
-    border: 1px solid var(--subscribe-border-input);
+    border: 1px solid $subscribe-border-input;
     border-radius: 4px;
-    background-color: var(--bgc-hero-footer);
-    caret-color: var(--primary-white);
-    color: var(--primary-white);
+    background-color: $bgc-hero-footer;
+    caret-color: $primary-white;
+    color: $primary-white;
     &::placeholder {
       font-weight: 400;
       line-height: 1.25;
       letter-spacing: 0.03em;
-      color: var(--address-subscribe-color);
+      color: $address-subscribe-color;
       filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     }
   }
   &__icon {
     width: 24px;
     height: 24px;
-    fill: var(--primary-white);
+    fill: $primary-white;
     &--after {
       margin-left: 10px;
       vertical-align: middle;

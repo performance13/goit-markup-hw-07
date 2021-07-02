@@ -1,10 +1,10 @@
 .page-header {
-  background-color: var(--primary-white);
+  background-color: $primary-white;
   &__container {
     display: flex;
     align-items: center;
   }
   &__border {
-    border-bottom: 1px solid var(--line-header);
+    border-bottom: 1px solid $line-header;
   }
 }

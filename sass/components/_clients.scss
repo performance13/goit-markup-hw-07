@@ -1,7 +1,7 @@
 .clients {
-  padding-top: var(--section-indent);
-  padding-bottom: var(--section-indent);
-  background-color: var(--primary-white);
+  padding-top: $section-indent;
+  padding-bottom: $section-indent;
+  background-color: $primary-white;
   &__subtitle {
     margin-bottom: 50px;
     font-weight: 700;
@@ -32,16 +32,16 @@
     justify-content: center;
     align-items: center;
     border-radius: 4%;
-    border: 1px solid var(--color-icon);
-    fill: var(--color-icon);
+    border: 1px solid $color-icon;
+    fill: $color-icon;
     transition-property: border-color, fill;
     transition-duration: 250ms;
-    transition-timing-function: var(--function);
+    transition-timing-function: $function;
 
     &:hover,
     &:focus {
-      border-color: var(--accent-color);
-      fill: var(--accent-color);
+      border-color: $accent-color;
+      fill: $accent-color;
     }
   }
 }

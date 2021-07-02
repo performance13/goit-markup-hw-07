@@ -1,6 +1,6 @@
 .what-doing {
-  padding-bottom: var(--section-indent);
-  background-color: var(--primary-white);
+  padding-bottom: $section-indent;
+  background-color: $primary-white;
   &__title {
     font-weight: 700;
     font-size: 14px;
@@ -32,7 +32,7 @@
     position: absolute;
     bottom: 0;
     transform: translate(0%, 0%);
-    background-color: var(--bgc-what-doing-title);
-    color: var(--primary-white);
+    background-color: $bgc-what-doing-title;
+    color: $primary-white;
   }
 }

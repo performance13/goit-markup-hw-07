@@ -1,7 +1,7 @@
 .features {
   padding-top: 90px;
-  padding-bottom: var(--section-indent);
-  background-color: var(--primary-white);
+  padding-bottom: $section-indent;
+  background-color: $primary-white;
   &__list {
     display: flex;
   }
@@ -20,7 +20,7 @@
   &__text {
     font-size: 14px;
     line-height: 1.714;
-    color: var(--secondary-text);
+    color: $secondary-text;
   }
 }
 

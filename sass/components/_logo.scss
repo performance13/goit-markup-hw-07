@@ -3,9 +3,9 @@
   font-weight: 700;
   font-size: 26px;
   line-height: 1.173;
-  color: var(--black-color);
+  color: $black-color;
   &--accent {
-    color: var(--accent-color);
+    color: $accent-color;
   }
 }
 
@@ -20,6 +20,6 @@
   &__logo {
     display: block;
     margin-bottom: 20px;
-    color: var(--primary-white);
+    color: $primary-white;
   }
 }

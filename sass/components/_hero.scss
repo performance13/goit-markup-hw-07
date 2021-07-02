@@ -2,8 +2,8 @@
   display: block;
   padding: 200px 0;
   text-align: center;
-  background-color: var(--bgc-hero-footer);
-  color: var(--primary-white);
+  background-color: $bgc-hero-footer;
+  color: $primary-white;
   &__overlays {
     max-width: 1600px;
     min-height: 600px;

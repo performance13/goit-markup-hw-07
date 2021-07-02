@@ -1,6 +1,6 @@
 .page-footer {
   padding: 60px 0;
-  background-color: var(--bgc-hero-footer);
+  background-color: $bgc-hero-footer;
   &__container {
     display: flex;
     align-items: baseline;

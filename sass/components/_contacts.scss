@@ -27,7 +27,7 @@
   &__item {
     transition-property: color;
     transition-duration: 250ms;
-    transition-timing-function: var(--function);
+    transition-timing-function: $function;
   }
 }
 
@@ -37,10 +37,10 @@
     align-items: center;
     padding-top: 32px;
     padding-bottom: 32px;
-    color: var(--secondary-text);
+    color: $secondary-text;
     &:hover,
     &:focus {
-      color: var(--accent-color);
+      color: $accent-color;
     }
   }
   &__icon {

@@ -1,14 +1,14 @@
 .portfolio {
-  padding-top: var(--section-indent);
-  padding-bottom: var(--section-indent);
-  background-color: var(--primary-white);
+  padding-top: $section-indent;
+  padding-bottom: $section-indent;
+  background-color: $primary-white;
   &__list {
     display: flex;
     margin-bottom: 50px;
     justify-content: center;
     transition-property: background-color, color, border-radius;
     transition-duration: 250ms;
-    transition-timing-function: var(--function);
+    transition-timing-function: $function;
   }
   &__item {
     &:not(:last-child) {
@@ -23,8 +23,8 @@
       &__button {
         &:hover,
         &:focus {
-          background-color: var(--accent-color);
-          color: var(--primary-white);
+          background-color: $accent-color;
+          color: $primary-white;
           border-radius: 4px;
         }
       }

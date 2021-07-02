@@ -6,7 +6,7 @@
     line-height: 1.15;
     text-align: center;
     margin-bottom: 12px;
-    color: var(--primary-text);
+    color: $primary-text;
   }
   &__input {
     display: block;
@@ -15,14 +15,14 @@
     padding-top: 11px;
     padding-bottom: 11px;
     padding-left: 42px;
-    border: 1px solid var(--form-border-input);
+    border: 1px solid $form-border-input;
     border-radius: 4px;
     transition-property: fill, border-color;
     transition-duration: 250ms;
-    transition-timing-function: var(--function);
+    transition-timing-function: $function;
     &:hover,
     &:focus {
-      border-color: var(--accent-color);
+      border-color: $accent-color;
     }
   }
   &__description {
@@ -31,7 +31,7 @@
     font-size: 12px;
     line-height: 1.166;
     letter-spacing: 0.01em;
-    color: var(--secondary-text);
+    color: $secondary-text;
     &--textarea {
       margin-bottom: 20px;
     }
@@ -55,7 +55,7 @@
   &__input:focus {
     + .data-form {
       &__icon {
-        fill: var(--accent-color);
+        fill: $accent-color;
       }
     }
   }
@@ -74,7 +74,7 @@
       font-size: 12px;
       line-height: 1.166;
       letter-spacing: 0.01em;
-      color: var(--comment-placeholder);
+      color: $comment-placeholder;
     }
   }
 }

@@ -7,7 +7,7 @@
     font-size: 14px;
     line-height: 1.714;
     text-align: center;
-    color: var(--secondary-text);
+    color: $secondary-text;
     &__text {
       display: inline;
     }
@@ -27,7 +27,7 @@
     font-size: 14px;
     line-height: 1.714;
     text-decoration: underline;
-    color: var(--accent-color);
+    color: $accent-color;
   }
 }
 
@@ -41,7 +41,7 @@
 .checkbox {
   &__icon {
     display: inline-block;
-    border: 2px solid var(--primary-text);
+    border: 2px solid $primary-text;
     border-radius: 2px;
     vertical-align: sub;
     &--check-mark {
@@ -59,8 +59,8 @@
         background-size: contain;
         margin-left: auto;
         margin-right: auto;
-        background-color: var(--accent-color);
-        border-color: var(--accent-color);
+        background-color: $accent-color;
+        border-color: $accent-color;
       }
     }
   }
