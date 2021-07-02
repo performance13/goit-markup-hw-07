@@ -30,16 +30,14 @@
 
 .contacts {
   &__item {
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: $function;
+    @extend %transition-color;
   }
 }
 
 .contacts {
   &__link {
-    display: flex;
-    align-items: center;
+    @extend %flexible-ai;
+
     padding-top: 32px;
     padding-bottom: 32px;
     color: $secondary-text;

@@ -3,12 +3,10 @@
   padding-bottom: $section-indent;
   background-color: $primary-white;
   &__list {
-    display: flex;
+    @extend %flexible-jc;
     margin-bottom: 50px;
-    justify-content: center;
-    transition-property: background-color, color, border-radius;
-    transition-duration: 250ms;
-    transition-timing-function: $function;
+
+    @extend %transition-bgc-c-br;
   }
   &__item {
     &:not(:last-child) {

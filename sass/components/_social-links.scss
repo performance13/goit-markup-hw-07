@@ -19,16 +19,14 @@
 
 .social-links {
   &__link {
-    display: flex;
+    @extend %flexible;
     width: 44px;
     height: 44px;
-    justify-content: center;
-    align-items: center;
     border-radius: 50%;
     fill: $color-icon;
-    transition-property: background-color, fill;
-    transition-duration: 250ms;
-    transition-timing-function: $function;
+
+    @extend %transition-bc-fill;
+
     &:hover,
     &:focus {
       background-color: $accent-color;

@@ -7,9 +7,8 @@
     letter-spacing: 0.03em;
   }
   &__item {
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: $function;
+    @extend %transition-color;
+
     &:not(:last-child) {
       margin-bottom: 9px;
     }

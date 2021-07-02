@@ -15,11 +15,12 @@
     padding-top: 11px;
     padding-bottom: 11px;
     padding-left: 42px;
+
     border: 1px solid $form-border-input;
     border-radius: 4px;
-    transition-property: fill, border-color;
-    transition-duration: 250ms;
-    transition-timing-function: $function;
+
+    @extend %transition-bc-fill;
+
     &:hover,
     &:focus {
       border-color: $accent-color;

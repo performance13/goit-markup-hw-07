@@ -75,11 +75,6 @@ body {
   background-color: #ffffff;
 }
 
-.page-header__container {
-  display: flex;
-  align-items: center;
-}
-
 .page-header__border {
   border-bottom: 1px solid #ececec;
 }
@@ -120,12 +115,6 @@ body {
   margin-left: 50px;
 }
 
-.site-nav__item {
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 .site-nav__link:hover, .site-nav__link:focus {
   color: #2196f3;
 }
@@ -140,19 +129,6 @@ body {
 .site-nav__link--active-page {
   color: #2196f3;
   position: relative;
-}
-
-.site-nav__link--active-page::after {
-  display: block;
-  content: "";
-  text-align: center;
-  width: 100%;
-  height: 1px;
-  bottom: -1px;
-  background-color: #2196f3;
-  border: 2px solid;
-  border-radius: 10px;
-  position: absolute;
 }
 
 .contacts__list {
@@ -171,15 +147,7 @@ body {
   margin-left: auto;
 }
 
-.contacts__item {
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 .contacts__link {
-  display: flex;
-  align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
   color: #757575;
@@ -230,18 +198,6 @@ body {
 .hero__button {
   display: block;
   margin: auto;
-  min-width: 200px;
-  height: 50px;
-  font-weight: 700;
-  line-height: 1.875;
-  letter-spacing: 0.06em;
-  background-color: #2196f3;
-  color: #ffffff;
-  border: 1px solid transparent;
-  border-radius: 4px;
-  transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero__button:hover, .hero__button:focus {
@@ -279,18 +235,6 @@ body {
 .subscribe-form__button {
   margin-left: 12px;
   padding: 10px 28px 10px 29px;
-  min-width: 200px;
-  height: 50px;
-  font-weight: 700;
-  line-height: 1.875;
-  letter-spacing: 0.06em;
-  background-color: #2196f3;
-  color: #ffffff;
-  border: 1px solid transparent;
-  border-radius: 4px;
-  transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .subscribe-form__button:hover, .subscribe-form__button:focus {
@@ -299,34 +243,13 @@ body {
 
 .data-form__button {
   display: block;
-  min-width: 200px;
-  height: 50px;
   padding: 10px 55px 10px 56px;
   margin: auto;
-  font-weight: 700;
-  line-height: 1.875;
-  letter-spacing: 0.06em;
-  background-color: #2196f3;
-  color: #ffffff;
-  box-shadow: 0px 2px 1px 0px #00000033, 0px 1px 1px 0px #00000024, 0px 1px 3px 0px #0000001f;
-  border: 1px solid transparent;
-  border-radius: 4px;
-  transition-property: background-color, border-radius;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .data-form__button:hover, .data-form__button:focus {
   background-color: #188ce8;
   border-radius: 4px;
-}
-
-.hero__title,
-.features__subtitle,
-.what-doing__title,
-.join__subtitle,
-.subscribe-form__subtitle {
-  text-transform: uppercase;
 }
 
 .features {
@@ -455,7 +378,6 @@ body {
 
 .member-card {
   background-color: #ffffff;
-  box-shadow: 0px 2px 1px 0px #00000033, 0px 1px 1px 0px #00000024, 0px 1px 3px 0px #0000001f;
 }
 
 .member-card__meta {
@@ -485,16 +407,10 @@ body {
 }
 
 .social-links__link {
-  display: flex;
   width: 44px;
   height: 44px;
-  justify-content: center;
-  align-items: center;
   border-radius: 50%;
   fill: #afb1b8;
-  transition-property: background-color, fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-links__link:hover, .social-links__link:focus {
@@ -544,17 +460,11 @@ body {
 }
 
 .client__link {
-  display: flex;
   width: 170px;
   height: 92px;
-  justify-content: center;
-  align-items: center;
   border-radius: 4%;
   border: 1px solid #afb1b8;
   fill: #afb1b8;
-  transition-property: border-color, fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .client__link:hover, .client__link:focus {
@@ -563,9 +473,6 @@ body {
 }
 
 .client__icon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 106px;
   height: 60px;
 }
@@ -586,12 +493,6 @@ body {
   font-size: 14px;
   line-height: 1.174;
   letter-spacing: 0.03em;
-}
-
-.address__item {
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .address__item:not(:last-child) {
@@ -629,12 +530,7 @@ body {
 }
 
 .portfolio__list {
-  display: flex;
   margin-bottom: 50px;
-  justify-content: center;
-  transition-property: background-color, color, border-radius;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio__item:not(:last-child) {
@@ -648,11 +544,9 @@ body {
 }
 
 .project__list {
-  display: flex;
   margin-left: calc(-1 * 30px);
   margin-bottom: calc(-1 * 30px);
   flex-wrap: wrap;
-  justify-content: center;
 }
 
 .project__item {
@@ -660,13 +554,6 @@ body {
   margin-left: 30px;
   margin-bottom: 30px;
   flex-basis: calc(100% / 3 - 30px);
-  transition-property: box-shadow;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.project__item:hover, .project__item:focus {
-  box-shadow: 0px 2px 1px 0px #00000033, 0px 1px 1px 0px #00000024, 0px 1px 3px 0px #0000001f;
 }
 
 .card {
@@ -737,7 +624,6 @@ body {
   min-width: 528px;
   min-height: 581px;
   background-color: #ffffff;
-  box-shadow: 0px 2px 1px 0px #00000033, 0px 1px 1px 0px #00000024, 0px 1px 3px 0px #0000001f;
 }
 
 .backdrop__modal {
@@ -821,9 +707,6 @@ body {
   padding-left: 42px;
   border: 1px solid #21212133;
   border-radius: 4px;
-  transition-property: fill, border-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .data-form__input:hover, .data-form__input:focus {
@@ -930,5 +813,90 @@ body {
   margin-right: auto;
   background-color: #2196f3;
   border-color: #2196f3;
+}
+
+.social-links__link, .client__link, .client__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.portfolio__list, .project__list {
+  display: flex;
+  justify-content: center;
+}
+
+.page-header__container, .contacts__link {
+  display: flex;
+  align-items: center;
+}
+
+.hero__button, .subscribe-form__button {
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.site-nav__item, .contacts__item, .address__item {
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.data-form__button {
+  transition-property: background-color, border-radius;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-links__link, .client__link, .data-form__input {
+  transition-property: border-color, fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio__list {
+  transition-property: background-color, color, border-radius;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.project__item {
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hero__button, .subscribe-form__button, .data-form__button {
+  min-width: 200px;
+  height: 50px;
+  font-weight: 700;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+  background-color: #2196f3;
+  color: #ffffff;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+.site-nav__link--active-page::after {
+  display: block;
+  content: "";
+  text-align: center;
+  width: 100%;
+  height: 1px;
+  bottom: -1px;
+  background-color: #2196f3;
+  border: 2px solid;
+  border-radius: 10px;
+  position: absolute;
+}
+
+.data-form__button, .member-card, .project__item:hover, .project__item:focus, .modal {
+  box-shadow: 0px 2px 1px 0px #00000033, 0px 1px 1px 0px #00000024, 0px 1px 3px 0px #0000001f;
+}
+
+.hero__title, .features__subtitle, .what-doing__title, .join__subtitle, .subscribe-form__subtitle {
+  text-transform: uppercase;
 }
 /*# sourceMappingURL=maine.css.map */

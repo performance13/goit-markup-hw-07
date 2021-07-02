@@ -2,7 +2,8 @@
   min-width: 528px;
   min-height: 581px;
   background-color: $primary-white;
-  box-shadow: $box-shadow1, $box-shadow2, $box-shadow3;
+
+  @extend %shadow;
 }
 
 .backdrop {
