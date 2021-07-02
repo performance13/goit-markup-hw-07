@@ -5,11 +5,11 @@
   letter-spacing: $ls;
 }
 
-@mixin position($pos: absolute, $t, $l) {
-  position: $pos;
-  top: $t;
-  left: $l;
-}
+// @mixin position($pstn: absolute, $tp, $lft) {
+//   position: $pstn;
+//   top: $tp;
+//   left: $lft;
+// }
 
 @mixin size($w, $h) {
   width: $w;
