@@ -1,7 +1,16 @@
 .button,
-.input,
-.project__item,
-.data-form__agree-newsletter {
+.input {
   cursor: pointer;
 }
-//
+
+.project {
+  &__item {
+    cursor: pointer;
+  }
+}
+
+.data-form {
+  &__agree-newsletter {
+    cursor: pointer;
+  }
+}

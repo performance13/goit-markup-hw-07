@@ -35,6 +35,11 @@
       background-repeat: no-repeat;
       background-position: center;
     }
+  }
+}
+
+.features {
+  &__icon {
     &--attention {
       &::before {
         background-image: url(../images/group1.svg);
