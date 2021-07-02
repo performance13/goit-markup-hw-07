@@ -1,9 +1,9 @@
-@mixin font($fw: 400, $fs: 14px, $lh: 1.142, $ls: 0.03em) {
-  font-weight: $fw;
-  font-size: $fs;
-  line-height: $lh;
-  letter-spacing: $ls;
-}
+// @mixin font($fw: 400, $fs: 14px, $lh: 1.142, $ls: 0.03em) {
+//   font-weight: $fw;
+//   font-size: $fs;
+//   line-height: $lh;
+//   letter-spacing: $ls;
+// }
 
 // @mixin position($pstn: absolute, $tp, $lft) {
 //   position: $pstn;
@@ -11,34 +11,29 @@
 //   left: $lft;
 // }
 
-@mixin size($w, $h) {
-  width: $w;
-  height: $h;
-}
+// @mixin size($w, $h) {
+//   width: $w;
+//   height: $h;
+// }
 
-@mixin border($b, $br) {
-  border: $b;
-  border-radius: $br;
-}
-//
-.social-links__link {
-  @include border(10px, 20%);
-}
-//
+// @mixin border($b, $br) {
+//   border: $b;
+//   border-radius: $br;
+// }
 
-@mixin color($bgc, $c, $f) {
-  background-color: $bgc;
-  color: $c;
-  fill: $f;
-}
+// @mixin color($bgc, $c, $f) {
+//   background-color: $bgc;
+//   color: $c;
+//   fill: $f;
+// }
 
-@mixin fill($bgc, $f) {
-  background-color: $bgc;
-  fill: $f;
-}
+// @mixin fill($bgc, $f) {
+//   background-color: $bgc;
+//   fill: $f;
+// }
 
-@mixin background-picture() {
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
+// @mixin background-picture() {
+//   background-size: cover;
+//   background-position: center;
+//   background-repeat: no-repeat;
+// }

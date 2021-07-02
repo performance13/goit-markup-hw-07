@@ -649,8 +649,8 @@ body {
 
 .project__list {
   display: flex;
-  margin-left: calc(-1 * var(--card-indent));
-  margin-bottom: calc(-1 * var(--card-indent));
+  margin-left: calc(-1 * 30px);
+  margin-bottom: calc(-1 * 30px);
   flex-wrap: wrap;
   justify-content: center;
 }
@@ -659,10 +659,10 @@ body {
   display: flex;
   margin-left: 30px;
   margin-bottom: 30px;
-  flex-basis: calc(100% / 3 - var(--card-indent));
+  flex-basis: calc(100% / 3 - 30px);
   transition-property: box-shadow;
   transition-duration: 250ms;
-  transition-timing-function: var(--function);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .project__item:hover, .project__item:focus {
@@ -930,10 +930,5 @@ body {
   margin-right: auto;
   background-color: #2196f3;
   border-color: #2196f3;
-}
-
-.social-links__link {
-  border: 10px;
-  border-radius: 20%;
 }
 /*# sourceMappingURL=maine.css.map */
