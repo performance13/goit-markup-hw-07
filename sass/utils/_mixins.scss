@@ -1,4 +1,4 @@
-@mixin font($weight: 400, $size: 14px, $lh: 1.142, $ls: 0.03em) {
+@mixin font($fw: 400, $fs: 14px, $lh: 1.142, $ls: 0.03em) {
   font-weight: $fw;
   font-size: $fs;
   line-height: $lh;
@@ -20,6 +20,11 @@
   border: $b;
   border-radius: $br;
 }
+//
+.social-links__link {
+  @include border(10px, 20%);
+}
+//
 
 @mixin color($bgc, $c, $f) {
   background-color: $bgc;

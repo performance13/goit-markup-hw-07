@@ -9,7 +9,7 @@
   &__item {
     transition-property: color;
     transition-duration: 250ms;
-    transition-timing-function: var(--function);
+    transition-timing-function: $function;
     &:not(:last-child) {
       margin-bottom: 9px;
     }
@@ -19,10 +19,10 @@
 .address {
   &__link {
     &--place {
-      color: var(--primary-white);
+      color: $primary-white;
     }
     &--connection {
-      color: var(--address-subscribe-color);
+      color: $address-subscribe-color;
     }
   }
 }
@@ -31,7 +31,7 @@
   &__link {
     &:hover,
     &:focus {
-      color: var(--accent-color);
+      color: $accent-color;
     }
   }
 }

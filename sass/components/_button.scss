@@ -7,16 +7,16 @@
     font-weight: 700;
     line-height: 1.875;
     letter-spacing: 0.06em;
-    background-color: var(--accent-color);
-    color: var(--primary-white);
+    background-color: $accent-color;
+    color: $primary-white;
     border: 1px solid transparent;
     border-radius: 4px;
     transition-property: background-color;
     transition-duration: 250ms;
-    transition-timing-function: var(--function);
+    transition-timing-function: $function;
     &:hover,
     &:focus {
-      background-color: var(--active-accent);
+      background-color: $active-accent;
     }
   }
 }
@@ -26,8 +26,8 @@
     padding: 6px 22px;
     font-weight: 500;
     line-height: 1.625;
-    background-color: var(--bgc-team-portfolio-btn);
-    color: var(--primary-text);
+    background-color: $bgc-team-portfolio-btn;
+    color: $primary-text;
     border: 1px solid transparent;
     border-radius: 4px;
   }
@@ -35,8 +35,8 @@
 
 .button {
   &--selected {
-    background-color: var(--accent-color);
-    color: var(--primary-white);
+    background-color: $accent-color;
+    color: $primary-white;
   }
 }
 
@@ -48,9 +48,9 @@
     right: 8px;
     width: 30px;
     height: 30px;
-    fill: var(--black-color);
-    background-color: var(--primary-white);
-    border: 1px solid var(--color-circle-icon-close);
+    fill: $black-color;
+    background-color: $primary-white;
+    border: 1px solid $color-circle-icon-close;
     border-radius: 50%;
   }
 }
@@ -64,16 +64,16 @@
     font-weight: 700;
     line-height: 1.875;
     letter-spacing: 0.06em;
-    background-color: var(--accent-color);
-    color: var(--primary-white);
+    background-color: $accent-color;
+    color: $primary-white;
     border: 1px solid transparent;
     border-radius: 4px;
     transition-property: background-color;
     transition-duration: 250ms;
-    transition-timing-function: var(--function);
+    transition-timing-function: $function;
     &:hover,
     &:focus {
-      background-color: var(--active-accent);
+      background-color: $active-accent;
     }
   }
 }
@@ -88,17 +88,17 @@
     font-weight: 700;
     line-height: 1.875;
     letter-spacing: 0.06em;
-    background-color: var(--accent-color);
-    color: var(--primary-white);
-    box-shadow: var(--box-shadow1), var(--box-shadow2), var(--box-shadow3);
+    background-color: $accent-color;
+    color: $primary-white;
+    box-shadow: $box-shadow1, $box-shadow2, $box-shadow3;
     border: 1px solid transparent;
     border-radius: 4px;
     transition-property: background-color, border-radius;
     transition-duration: 250ms;
-    transition-timing-function: var(--function);
+    transition-timing-function: $function;
     &:hover,
     &:focus {
-      background-color: var(--active-accent);
+      background-color: $active-accent;
       border-radius: 4px;
     }
   }
