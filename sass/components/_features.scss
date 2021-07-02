@@ -12,9 +12,8 @@
     }
   }
   &__subtitle {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.142;
+    @include font(700, 14px, 1.142, 0.03em);
+
     margin-bottom: 10px;
   }
   &__text {
@@ -31,9 +30,8 @@
       display: block;
       height: 120px;
       margin-bottom: 30px;
-      background-size: contain;
-      background-repeat: no-repeat;
-      background-position: center;
+
+      @include background-picture();
     }
   }
 }

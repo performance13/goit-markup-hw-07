@@ -17,36 +17,34 @@
 .portfolio {
   &__button {
     padding: 6px 22px;
-    font-weight: 500;
-    line-height: 1.625;
-    background-color: $bgc-team-portfolio-btn;
-    color: $primary-text;
 
-    border: 1px solid transparent;
-    border-radius: 4px;
+    @include font(500, 16px, 1.625, 0.03em);
+
+    @include color($bgc-team-portfolio-btn, $primary-text);
+
+    @include border();
   }
 }
 
 .button {
   &--selected {
-    background-color: $accent-color;
-    color: $primary-white;
+    @include color($accent-color, $primary-white);
   }
 }
 
 .modal {
   &__button-close {
     display: block;
+
     position: absolute;
     top: 8px;
     right: 8px;
-    width: 30px;
-    height: 30px;
-    fill: $black-color;
-    background-color: $primary-white;
 
-    border: 1px solid $color-circle-icon-close;
-    border-radius: 50%;
+    @include size(30px, 30px);
+
+    @include fill($primary-white, $black-color);
+
+    @include border($color-circle-icon-close, 50%);
   }
 }
 
@@ -80,8 +78,7 @@
 
     &:hover,
     &:focus {
-      background-color: $active-accent;
-      border-radius: 4px;
+      @include border($active-accent);
     }
   }
 }

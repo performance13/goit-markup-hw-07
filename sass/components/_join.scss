@@ -6,9 +6,8 @@
 
 .join {
   &__subtitle {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.142;
+    @include font(700, 14px, 1.142, 0.03em);
+
     color: $primary-white;
     margin-bottom: 20px;
   }

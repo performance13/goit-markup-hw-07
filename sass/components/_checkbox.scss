@@ -2,10 +2,10 @@
   &__agree-newsletter {
     display: block;
     margin-bottom: 30px;
+
+    @include font();
+
     font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.714;
     text-align: center;
     color: $secondary-text;
     &__text {
@@ -23,9 +23,9 @@
 .agreement {
   &__link {
     font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.714;
+
+    @include font();
+
     text-decoration: underline;
     color: $accent-color;
   }
@@ -41,13 +41,15 @@
 .checkbox {
   &__icon {
     display: inline-block;
+
     border: 2px solid $primary-text;
     border-radius: 2px;
+
     vertical-align: sub;
     &--check-mark {
       display: block;
-      width: 16px;
-      height: 15px;
+
+      @include size(16px, 15px);
     }
   }
 }
@@ -56,9 +58,10 @@
   &__checkbox:checked {
     + .checkbox {
       &__icon {
-        background-size: contain;
         margin-left: auto;
         margin-right: auto;
+
+        background-size: contain;
         background-color: $accent-color;
         border-color: $accent-color;
       }

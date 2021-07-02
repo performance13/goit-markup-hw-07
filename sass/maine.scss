@@ -1,5 +1,7 @@
 @import "./utils/variables";
 @import "./utils/_reset-styles";
+@import "./utils/placeholders";
+@import "./utils/mixins";
 @import "./components/common-properties";
 @import "./components/container";
 @import "./utils/visually-hidden";
@@ -27,5 +29,3 @@
 @import "./components/subscribe";
 @import "./components/data-form";
 @import "./components/checkbox";
-@import "./utils/placeholders";
-@import "./utils/mixins";

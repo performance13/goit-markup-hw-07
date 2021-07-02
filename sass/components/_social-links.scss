@@ -20,8 +20,9 @@
 .social-links {
   &__link {
     @extend %flexible;
-    width: 44px;
-    height: 44px;
+
+    @include size(44px, 44px);
+
     border-radius: 50%;
     fill: $color-icon;
 
@@ -29,13 +30,11 @@
 
     &:hover,
     &:focus {
-      background-color: $accent-color;
-      fill: $primary-white;
+      @include fill($accent-color, $primary-white);
     }
   }
   &__icon {
-    width: 20px;
-    height: 20px;
+    @include size(20px, 20px);
   }
 }
 
@@ -50,12 +49,11 @@
 .social-links {
   &__link {
     &--footer {
-      fill: $primary-white;
-      background-color: $color-circle-icon-bottom;
+      @include fill($color-circle-icon-bottom, $primary-white);
+
       &:hover,
       &:focus {
-        background-color: $accent-color;
-        fill: $primary-white;
+        @include fill($accent-color, $primary-white);
       }
     }
   }

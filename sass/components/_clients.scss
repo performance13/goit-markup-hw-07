@@ -4,9 +4,9 @@
   background-color: $primary-white;
   &__subtitle {
     margin-bottom: 50px;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.166;
+
+    @include font(700, 36px, 1.166, 0.03em);
+
     text-align: center;
   }
 }
@@ -28,11 +28,9 @@
   &__link {
     @extend %flexible;
 
-    width: 170px;
-    height: 92px;
+    @include size(170px, 92px);
 
-    border-radius: 4%;
-    border: 1px solid $color-icon;
+    @include border($color-icon, 4%);
 
     fill: $color-icon;
 
@@ -50,7 +48,6 @@
   &__icon {
     @extend %flexible;
 
-    width: 106px;
-    height: 60px;
+    @include size(106px, 60px);
   }
 }

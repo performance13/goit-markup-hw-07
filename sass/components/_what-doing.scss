@@ -2,15 +2,13 @@
   padding-bottom: $section-indent;
   background-color: $primary-white;
   &__title {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.142;
+    @include font(700, 14px, 1.142, 0.03em);
   }
   &__subtitle {
     margin-bottom: 50px;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.166;
+
+    @include font(700, 36px, 1.166, 0.03em);
+
     text-align: center;
   }
   &__list {
@@ -24,15 +22,17 @@
   }
   &__direction {
     display: block;
-    width: 370px;
-    height: 70px;
-    padding-top: 27px;
-    padding-bottom: 27px;
-    text-align: center;
     position: absolute;
     bottom: 0;
     transform: translate(0%, 0%);
-    background-color: $bgc-what-doing-title;
-    color: $primary-white;
+
+    @include size(370px, 70px);
+
+    padding-top: 27px;
+    padding-bottom: 27px;
+
+    text-align: center;
+
+    @include color($bgc-what-doing-title, $primary-white);
   }
 }

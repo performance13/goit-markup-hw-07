@@ -1,6 +1,7 @@
 .portfolio {
   padding-top: $section-indent;
   padding-bottom: $section-indent;
+
   background-color: $primary-white;
   &__list {
     @extend %flexible-jc;
@@ -21,8 +22,8 @@
       &__button {
         &:hover,
         &:focus {
-          background-color: $accent-color;
-          color: $primary-white;
+          @include color($accent-color, $primary-white);
+
           border-radius: 4px;
         }
       }

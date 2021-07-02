@@ -3,6 +3,7 @@
     @extend %flexible-jc;
     margin-left: calc(-1 * #{$card-indent});
     margin-bottom: calc(-1 * #{$card-indent});
+
     flex-wrap: wrap;
   }
 }
@@ -12,6 +13,7 @@
     display: flex;
     margin-left: $card-indent;
     margin-bottom: $card-indent;
+
     flex-basis: calc(100% / 3 - #{$card-indent});
 
     @extend %transition-shadow;
@@ -31,35 +33,37 @@
   }
   &__overlay-description {
     position: absolute;
-    width: 100%;
-    height: 100%;
+
+    @include size(100%, 100%);
+
     padding: 63px 24px;
-    font-size: 18px;
-    line-height: 1.555;
-    letter-spacing: 0.03em;
-    background-color: $overlay-color;
-    color: $primary-white;
+
+    @include font(400, 18px, 1.555, 0.03em);
+
+    @include color($overlay-color, $primary-white);
   }
   &__content {
     padding-top: 20px;
     padding-right: 24px;
     padding-bottom: 20px;
     padding-left: 24px;
+
     border-right: 1px solid $border-card;
     border-bottom: 1px solid $border-card;
     border-left: 1px solid $border-card;
+
     background-color: $primary-white;
   }
   &__title {
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 2;
-    letter-spacing: 0.06em;
+    @include font(700, 18px, 2, 0.06em);
+
     color: $primary-text;
   }
   &__text {
     margin-top: 4px;
-    line-height: 1.875;
+
+    @include font(400, 16px, 1.875, 0.03em);
+
     color: $secondary-text;
   }
 }
@@ -70,6 +74,7 @@
       .card {
         &__overlay-description {
           display: block;
+
           transform: translateY(-100%);
           transition: 250ms $function;
         }

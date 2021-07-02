@@ -1,10 +1,8 @@
 .address {
   &__list {
     font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.174;
-    letter-spacing: 0.03em;
+
+    @include font();
   }
   &__item {
     @extend %transition-color;
