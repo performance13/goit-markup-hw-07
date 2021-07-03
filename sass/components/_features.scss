@@ -36,27 +36,37 @@
   }
 }
 
-.features {
-  &__icon {
-    &--attention {
-      &::before {
-        background-image: url(../images/group1.svg);
-      }
-    }
-    &--punctuality {
-      &::before {
-        background-image: url(../images/group2.svg);
-      }
-    }
-    &--planning {
-      &::before {
-        background-image: url(../images/group3.svg);
-      }
-    }
-    &--technologies {
-      &::before {
-        background-image: url(../images/group4.svg);
-      }
-    }
-  }
-}
+//решил использовать Дерективу @each (для этого добавил классы в index.html)>> находится в partials  (фрагменте)  _each.scss
+
+// .features {
+//   &__icon {
+//     &--attention {
+//       &::before {
+//         background-image: url(../images/group1.svg);
+//       }
+//     }
+//     &--punctuality {
+//       &::before {
+//         background-image: url(../images/group2.svg);
+//       }
+//     }
+//     &--planning {
+//       &::before {
+//         background-image: url(../images/group3.svg);
+//       }
+//     }
+//     &--technologies {
+//       &::before {
+//         background-image: url(../images/group4.svg);
+//       }
+//     }
+//   }
+// }
+
+// @each $icon in group1, group2, group3, group4 {
+//   .icon__#{$icon} {
+//     &::before {
+//       background-image: url("../images/#{$icon}.svg");
+//     }
+//   }
+// }
