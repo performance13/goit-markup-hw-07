@@ -382,20 +382,20 @@ body {
   background-repeat: no-repeat;
 }
 
-.features__icon--attention::before {
-  background-image: url(../images/group1.svg);
+.icon__group1::before {
+  background-image: url("../images/group1.svg");
 }
 
-.features__icon--punctuality::before {
-  background-image: url(../images/group2.svg);
+.icon__group2::before {
+  background-image: url("../images/group2.svg");
 }
 
-.features__icon--planning::before {
-  background-image: url(../images/group3.svg);
+.icon__group3::before {
+  background-image: url("../images/group3.svg");
 }
 
-.features__icon--technologies::before {
-  background-image: url(../images/group4.svg);
+.icon__group4::before {
+  background-image: url("../images/group4.svg");
 }
 
 .what-doing {
