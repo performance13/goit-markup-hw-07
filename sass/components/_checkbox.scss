@@ -7,7 +7,7 @@
 
     font-style: normal;
     text-align: center;
-    color: $secondary-text;
+    color: getColor-text("secondary");
     &__text {
       display: inline;
     }
@@ -42,7 +42,7 @@
   &__icon {
     display: inline-block;
 
-    border: 2px solid $primary-text;
+    border: 2px solid getColor-text("primary");
     border-radius: 2px;
 
     vertical-align: sub;

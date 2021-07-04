@@ -59,14 +59,14 @@
   &__title {
     @include font(700, 18px, 2, 0.06em);
 
-    color: $primary-text;
+    color: getColor-text("primary");
   }
   &__text {
     margin-top: 4px;
 
     @include font(400, 16px, 1.875, 0.03em);
 
-    color: $secondary-text;
+    color: getColor-text("secondary");
   }
 }
 

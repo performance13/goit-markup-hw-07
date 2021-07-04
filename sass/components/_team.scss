@@ -41,7 +41,7 @@
   &__profession {
     @include font(400, 16px, 1.171, 0.03em);
 
-    color: $secondary-text;
+    color: getColor-text("secondary");
     text-align: center;
   }
 }

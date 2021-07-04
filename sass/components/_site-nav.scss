@@ -41,7 +41,7 @@
     padding-top: 32px;
     padding-bottom: 32px;
 
-    color: $primary-text;
+    color: getColor-text("primary");
     &--active-page {
       color: $accent-color;
       position: relative;

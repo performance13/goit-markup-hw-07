@@ -1,5 +1,3 @@
-$primary-text: #212121;
-$secondary-text: #757575;
 $primary-white: #ffffff;
 $accent-color: #2196f3;
 $black-color: #000000;
@@ -11,8 +9,8 @@ $border-card: #eeeeee;
 $active-accent: #188ce8;
 $color-icon: #afb1b8;
 $overlay-color: #2196f3e6;
-$bgc-what-doing-title: #2f303acc;
 $bgc-backdrop: #00000033;
+$bgc-what-doing-title: #2f303acc;
 $color-circle-icon-bottom: #ffffff1a;
 $color-circle-icon-close: #e6e6e6;
 $comment-placeholder: #bababa;
@@ -24,3 +22,17 @@ $box-shadow3: 0px 1px 3px 0px #0000001f;
 $function: cubic-bezier(0.4, 0, 0.2, 1);
 $section-indent: 94px;
 $card-indent: 30px;
+
+// $primary-text: #212121;
+// $secondary-text: #757575;
+
+// source maps :  function (map-get())
+
+$color-text: (
+  "primary": #212121,
+  "secondary": #757575,
+);
+
+@function getColor-text($key) {
+  @return map-get($color-text, $key);
+}
